@@ -1,0 +1,9 @@
+<h2><%= @cocktail.name %></h2>
+
+<% #if @cocktails.reviews.empty? %>
+<!-- <p>No reviews yet!</p> -->
+<% #else %>
+<% # %>
+<% @cocktail.doses.each do |dose|%>
+<p><%= dose.description %></p>
+<% end %>
